@@ -138,7 +138,6 @@ namespace FilesCleaner
             this.MaximizeBox = false;
             this.Name = "Main";
             this.Text = "Files Cleaner";
-            this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

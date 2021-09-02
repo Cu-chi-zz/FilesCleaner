@@ -21,11 +21,6 @@ namespace FilesCleaner
             InitializeComponent();
         }
 
-		private void Main_Load(object sender, EventArgs e)
-		{
-			
-		}
-
 		private void folderButton_Click(object sender, EventArgs e)
 		{
 			FolderBrowserDialog folderSelection = new FolderBrowserDialog();
