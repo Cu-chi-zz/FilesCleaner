@@ -49,7 +49,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>rte-white-logo-540x540.ico</ApplicationIcon>
+    <ApplicationIcon>icon96x96.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>
@@ -104,6 +104,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="icon96x96.ico" />
     <Content Include="rte-white-logo-540x540.ico" />
   </ItemGroup>
   <ItemGroup>
