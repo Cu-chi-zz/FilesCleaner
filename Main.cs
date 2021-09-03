@@ -54,7 +54,7 @@ namespace FilesCleaner
 				try
 				{
 					waitingEnd = true;
-					filesList = Directory.GetFiles(folderPath, (searchPaternTextBox.Text != "" ? searchPaternTextBox.Text : "*"), SearchOption.AllDirectories);
+					filesList = Directory.GetFiles(folderPath, (searchPaternTextBox.Text != "" ? searchPaternTextBox.Text : "*"), (subfoldersCheckBox.Checked ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly));
 				}
 				catch (UnauthorizedAccessException)
 				{
@@ -64,7 +64,7 @@ namespace FilesCleaner
 				}
 				catch (Exception ex)
 				{
-					MessageBox.Show(ex.Message.ToString(), ex.InnerException.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show(ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 					waitingEnd = false;
 					return;
 				}

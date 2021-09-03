@@ -37,6 +37,7 @@ namespace FilesCleaner
             this.label1 = new System.Windows.Forms.Label();
             this.progressionLabel = new System.Windows.Forms.Label();
             this.richTextBox = new System.Windows.Forms.RichTextBox();
+            this.subfoldersCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // folderButton
@@ -115,10 +116,24 @@ namespace FilesCleaner
             this.richTextBox.Location = new System.Drawing.Point(12, 81);
             this.richTextBox.Name = "richTextBox";
             this.richTextBox.ReadOnly = true;
-            this.richTextBox.Size = new System.Drawing.Size(476, 145);
+            this.richTextBox.Size = new System.Drawing.Size(359, 145);
             this.richTextBox.TabIndex = 7;
             this.richTextBox.Text = "";
             this.richTextBox.TextChanged += new System.EventHandler(this.richTextBox_TextChanged);
+            // 
+            // subfoldersCheckBox
+            // 
+            this.subfoldersCheckBox.AutoSize = true;
+            this.subfoldersCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.subfoldersCheckBox.Checked = true;
+            this.subfoldersCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.subfoldersCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.subfoldersCheckBox.Location = new System.Drawing.Point(403, 83);
+            this.subfoldersCheckBox.Name = "subfoldersCheckBox";
+            this.subfoldersCheckBox.Size = new System.Drawing.Size(85, 17);
+            this.subfoldersCheckBox.TabIndex = 8;
+            this.subfoldersCheckBox.Text = "All subfolders";
+            this.subfoldersCheckBox.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
@@ -126,6 +141,7 @@ namespace FilesCleaner
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(0)))), ((int)(((byte)(43)))));
             this.ClientSize = new System.Drawing.Size(500, 307);
+            this.Controls.Add(this.subfoldersCheckBox);
             this.Controls.Add(this.richTextBox);
             this.Controls.Add(this.progressionLabel);
             this.Controls.Add(this.searchPaternTextBox);
@@ -152,6 +168,7 @@ namespace FilesCleaner
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label progressionLabel;
 		private System.Windows.Forms.RichTextBox richTextBox;
+		private System.Windows.Forms.CheckBox subfoldersCheckBox;
 	}
 }
 
